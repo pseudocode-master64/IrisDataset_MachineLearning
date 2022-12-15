@@ -5,7 +5,7 @@
 For this set of activities, we'll be performing several machine-learning tasks on a (famous) data set containing sepal and petal measurements and species information about a sample of iris flowers. For more information about this data set, see the *Iris [Flower Data Set* Wikipedia](https://en.wikipedia.org/wiki/Iris_flower_data_set)* article.
 
 
-**Supervised Learning  Classification kNN Classification ![](Aspose.Words.16b5ad20-70be-4ed5-8081-a4e16c6e7979.005.png)**
+## **Supervised Learning  Classification kNN Classification ![](Aspose.Words.16b5ad20-70be-4ed5-8081-a4e16c6e7979.005.png)**
 
 Predicting the species of a flower
 
@@ -18,7 +18,7 @@ However, there is a problem. In part 1, we need to specify k. If we choose a val
 2. Design a function that takes in (1) a value of k and (2) a data set of flowers. For each flower in the data set, the function predicts the species of the flower removed (for example, by using the function from part 1) using the k nearest neighbors in the flowers that are still in the data set. The function then checks *whether the prediction is correct or not* by looking at the actual species. After going through all the flowers, the function returns the proportion of the predictions that were incorrec*t*; in other words, the function returns the leave-one-out cross validation **error rate**.
 2. Plot the error rate against k for a range of values, say k from 1 to 50. Use this plot to choose an appropriate value of k based on leave-one-out-cross validation.
 
-**Supervised Learning  Regression kNN Regression ![](Aspose.Words.16b5ad20-70be-4ed5-8081-a4e16c6e7979.005.png)**
+## **Supervised Learning  Regression kNN Regression ![](Aspose.Words.16b5ad20-70be-4ed5-8081-a4e16c6e7979.005.png)**
 
 Predicting the petal length of a flower
 
@@ -31,7 +31,7 @@ As in the previous activity, there is a problem. In part 1, we need to specify k
 2. Design a function that takes in (1) a value of k and (2) a data set of flowers. For each flower in the data set, the function predicts the petal length of the flower removed (for example, by using the function from part 1) using the k nearest neighbors in the flowers that are still in the data set. The function then calculates the *squared deviation of the prediction from the actual petal length*. After going through all the flowers, the function returns *the square root of the average squared deviation*; in other words, the function returns the leave-one-out cross validation **root-mean-squared error (RMSE)**.
 2. Plot the RMSE against k for a range of values, say k from 1 to 50. Use this plot to choose an appropriate value of k based on leave-one-out-cross validation.
 
-**Unsupervised Learning  Clustering k-Means Clustering ![](Aspose.Words.16b5ad20-70be-4ed5-8081-a4e16c6e7979.005.png)**
+## **Unsupervised Learning  Clustering k-Means Clustering ![](Aspose.Words.16b5ad20-70be-4ed5-8081-a4e16c6e7979.005.png)**
 
 Creating clusters of similar flowers
 
@@ -55,5 +55,6 @@ For each cluster, identify all the points that belong to it and then shift the c
 
 Practically, we can set a minimum threshold distance for cluster center movement: if no clusters move more than the threshold distance, we break out of the algorithm; otherwise we continue iteration from step B.** 
 
+**Task: **
 1. Design a function that takes in (1) an integer k, which can be from 1 to 5, and (2) a set of flowers, and then performs KMC until the flowers have been placed in stable clusters. At each step in the algorithm, the function should plot the the clusters as large **x** marks with different colors together with the data points as small **o** marks colored according to which cluster they belong to. (Ideally, the function should save the plots as image files so that we can view the evolution of the clusters as an animation afterwards.) 
 1. Using k = 3, compare the clusters formed to the species of each data point. (For example, plot the data using point color to identify the cluster a point belongs to, and point shape to identify the species it represents.)

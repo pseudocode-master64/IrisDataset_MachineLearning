@@ -39,19 +39,19 @@ In this task, we are going use an algorithm called **k-means clustering (KMC)** 
 
 KMC is an iterative algorithm. The way it works is:
 
-1. **Randomly place k clusters in space.** 
+1. **Randomly place k clusters in space.**
 
 This can be done in different ways. One idea is to select k random flowers in the data and put the cluster centers directly on those flowers. Another idea is to look at the range of the data, and then place the cluster centers randomly in that range. (Other ideas that make the centers more likely to be spread out also exist.)
 
-2. **Assign each point in the data to the nearest cluster.** 
+2. **Assign each point in the data to the nearest cluster.**
 
-In other words, go through each point in the data, find the cluster that it is nearest to the point, and then mark that point as belonging to that cluster. 
+In other words, go through each point in the data, find the cluster that it is nearest to the point, and then mark that point as belonging to that cluster.
 
-3. **Shift each cluster center.** 
+3. **Shift each cluster center.**
 
-For each cluster, identify all the points that belong to it and then shift the cluster to the mean position of its points. 
+For each cluster, identify all the points that belong to it and then shift the cluster to the mean position of its points.
 
-4. **Repeat until the clusters settle down.** 
+4. **Repeat until the clusters settle down.**
 
 Practically, we can set a minimum threshold distance for cluster center movement: if no clusters move more than the threshold distance, we break out of the algorithm; otherwise we continue iteration from step B.** 
 
